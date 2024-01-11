@@ -13,7 +13,7 @@ public class Y_24_oops {
         pen1.type = " ball";
 
         pen1.write();
-
+          System.out.println("hello");
          
     }
 }
