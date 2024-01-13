@@ -1,4 +1,4 @@
-package java;
+package pack;
 
 class Account{
     public String name;         //public access modfier
