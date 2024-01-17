@@ -29,24 +29,24 @@ public class Y_17_Recursion
 //     public static void main(String args[]) {
 //         printSum(1, 5, 0);
 //     }
-// {
-//     public static int calcfac(int n){
+{
+    public static int calcfac(int n){
 
-//         if(n==1 || n==0){
-//             return 1;
-//         }
-//         int fact_nm1 = calcfac(n-1);
-//         int fact_n = n* fact_nm1;
-//         return fact_n;
+        if(n==1 || n==0){
+            return 1;
+        }
+        int fact_nm1 = calcfac(n-1);
+        int fact_n = n* fact_nm1;
+        return fact_n;
 
 
-//     }
-//     public static void main(String args[]){
-//         int n = 5;
-//        int ans =  calcfac(n);
-//        System.out.println(ans);
-//     }
-// }
+    }
+    public static void main(String args[]){
+        int n = 5;
+       int ans =  calcfac(n);
+       System.out.println(ans);
+    }
+}
 // {
 // public class Recursion1{
 //     public static void printFib(int a, int b, int n ){
@@ -69,26 +69,26 @@ public class Y_17_Recursion
 //     }
 // }
 // }
-{
+// {
 
     
-        public static int calcPower(int x, int n){
+//         public static int calcPower(int x, int n){
 
-            if(n==0){
-                return 1;
-            }
-            if(x==0){
-                return 0;
-            }
-            int xPownm1= calcPower(x, n-1);
-            int xPown= x * xPownm1;
-            return xPown;
+//             if(n==0){
+//                 return 1;
+//             }
+//             if(x==0){
+//                 return 0;
+//             }
+//             int xPownm1= calcPower(x, n-1);
+//             int xPown= x * xPownm1;
+//             return xPown;
 
-        }
+//         }
 
-        public static void main(String args[]) {
-            int x = 2, n=5;
-            int ans = calcPower(x, n);
-            System.out.println(ans);
-        }
-    }
+    //     public static void main(String args[]) {
+    //         int x = 2, n=5;
+    //         int ans = calcPower(x, n);
+    //         System.out.println(ans);
+    //     }
+    // }
