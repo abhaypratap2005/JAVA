@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.ArrayList;
 
 public class Y_33_BinarySearchTrees {
 
@@ -58,7 +58,7 @@ static class Node{
 
     //delete an node
 
-    
+
     public static Node delete(Node root, int val){
         if(root.data>val){
             root.left=delete(root.left,val);
@@ -91,6 +91,47 @@ static class Node{
             }
             return root;
     }
+
+    //print in range
+    public static void printInRange(Node root,int X, int Y){
+        if(root==null){
+            return;
+        }
+            if(root.data >= X && root.data <= Y){
+                printInRange(root.left,X,Y);
+                System.out.println(root.data+" ");
+                printInRange(root.right,X,Y);
+            }
+            else if(root.data >= Y){
+                printInRange(root.left,X,Y);
+            }
+            else{
+                printInRange(root.right,X,Y);
+            }
+    }
+    public static void printPath( ArrayList<Integer> path){
+        for(int i=0;i<path.size();i++){
+            System.out.println(path.get(i)+"->");
+        }
+    }
+    public static void printRoot2leaf(Node root, ArrayList<Integer>
+    path){
+    if(root==null){
+        return;
+    }
+    path.add(root.data);
+
+    //leaf
+    if(root.left==null&& root.right==null){
+        printPath(path);
+    } else{  // non leaf
+        printRoot2leaf(root.left,path);
+        printRoot2leaf(root.right,path);
+    }
+   
+    path.remove(path.size()-1);
+}
+    
     public static void main(String[] args) {
       int values[]={8,5,3,1,4,6,10,11,14};  
       Node root=null;
@@ -106,7 +147,9 @@ static class Node{
     //   }  else{
     //     System.out.println("not found");
     //   }
-    delete(root, 4);
-    inorder(root);  
+    // delete(root, 4);
+    // inorder(root);  
+    // printInRange(root, 3, 10);
+    printRoot2leaf(root, new ArrayList<>());
     }
 }
