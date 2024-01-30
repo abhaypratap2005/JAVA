@@ -37,3 +37,4 @@ public class BinarySearch {
             
     }
 }
+//copied by the internet
