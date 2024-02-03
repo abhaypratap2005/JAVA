@@ -56,3 +56,4 @@ public class Y_35_Hahmap {
   System.out.println(map);
 }
 }
+//hashmap
