@@ -63,7 +63,7 @@ public class Y_36_HahmapImplementation {
     System.out.println(key +" "+map.get(key));
   }
 
-
+  //removing the element
   //remove 
   map.remove("China");
   System.out.println(map);
