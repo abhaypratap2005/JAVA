@@ -65,7 +65,8 @@ public class Y_27_ReverseLinkedList {
         }
         head = head.next;
     }
-
+    
+    //delete last
     public void deleteLast() {
         if (head == null) {
             System.out.println("empty list");
@@ -83,7 +84,9 @@ public class Y_27_ReverseLinkedList {
         }
         secondLast.next = null;
     }
+     
 
+    //get size
     public int getSize() {
         return size;
     }

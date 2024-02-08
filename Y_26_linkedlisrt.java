@@ -64,7 +64,8 @@ public class Y_26_linkedlisrt {
         }
         head = head.next;
     }
-
+    
+    //delete last
     public void deleteLast() {
         if (head == null) {
             System.out.println("empty list");
@@ -82,6 +83,8 @@ public class Y_26_linkedlisrt {
         }
            secondLast.next=null;
     }
+
+    //get size
     public int getSize(){
         return size;
     }
