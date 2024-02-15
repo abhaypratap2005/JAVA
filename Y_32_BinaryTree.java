@@ -182,7 +182,6 @@ public class Y_32_BinaryTree {
         // System.out.println(height(root));
         // System.out.println(diameter(root));
         System.out.println(diameter2(root).dia);
-        
-          
+       
     }
 }
